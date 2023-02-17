@@ -1,0 +1,69 @@
+<template>
+    <div id="app">
+        <el-container>
+            <el-header>
+                <h1>天气查询</h1>
+            </el-header>
+            <el-main>
+                <el-form :inline="true" :model="form" class="demo-form-inline">
+                    <el-form-item label="城市">
+                        <el-input v-model="form.city" placeholder="请输入城市名"></el-input>
+                    </el-form-item>
+                    <el-form-item>
+                        <el-button type="primary" @click="getWeather">查询</el-button>
+                    </el-form-item>
+                </el-form>
+                <el-card v-if="weather" class="box-card">
+                    <div slot="header" class="clearfix">
+                        <span>{{weather.name}}</span>
+                    </div>
+                    <div class="text item">
+                        <p>温度：{{weather.main.temp}} K</p>
+                        <p>气压：{{weather.main.pressure}} hPa</p>
+                        <p>湿度：{{weather.main.humidity}} %</p>
+                        <p>风速：{{weather.wind.speed}} m/s</p>
+                        <p>风向：{{weather.wind.deg}} °</p>
+                    </div>
+                </el-card>
+            </el-main>
+        </el-container>
+    </div>
+</template>
+
+<script>
+    import axios from "axios";
+    export default {
+        name: "App",
+        data() {
+            return {
+                form: {
+                    city: "",
+                },
+                weather: null,
+            };
+        },
+        methods: {
+            getWeather() {
+                axios
+                    .get("http://localhost:8080/weather", {
+                        params: {
+                            city: this.form.city,
+                        },
+                    })
+                    .then((response) => {
+                        this.weather = response.data;
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                    });
+            },
+        },
+    };
+</script>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+</style>
