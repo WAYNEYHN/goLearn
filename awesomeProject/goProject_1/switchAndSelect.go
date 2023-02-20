@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	numbers := []int8{1, 2, 3, 4, 5, 6}
-	print()
+	print(numbers)
 	//RangeTest()
 }
 
@@ -24,14 +24,15 @@ func RangeTest() {
 
 func switchTest() {
 
-	//value6 := interface{}(byte(127))
-	//value6.type()
-	//switch t := value6.(type) {
-	//case uint8, uint16:
-	//	fmt.Println("uint8 or uint16")
-	//case byte:
-	//	fmt.Printf("byte")
-	//default:
-	//	fmt.Printf("unsupported type: %T", t)
-	//}
+	value6 := interface{}(byte(127))
+	value6.type()
+
+	switch t := value6.(type) {
+	case uint8, uint16:
+		fmt.Println("uint8 or uint16")
+	case byte:
+		fmt.Printf("byte")
+	default:
+		fmt.Printf("unsupported type: %T", t)
+	}
 }
