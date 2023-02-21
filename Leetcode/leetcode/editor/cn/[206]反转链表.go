@@ -15,8 +15,9 @@ package main
 func reverseList(head *ListNode) *ListNode {
 	var p1 *ListNode = nil
 	p2 := head
+	var tmp *ListNode = nil
 	for (p2 != nil) {
-		tmp := p2.Next
+		tmp = p2.Next
 		p2.Next = p1
 		p1 = p2
 		p2 = tmp
