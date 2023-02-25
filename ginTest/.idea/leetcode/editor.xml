@@ -58,6 +58,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../Leetcode/leetcode/editor/cn/[438]找到字符串中所有字母异位词.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../Leetcode/leetcode/editor/cn/doc/content/[438]找到字符串中所有字母异位词.md" />
+              <option name="frontendQuestionId" value="leetcode.cn438" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../Leetcode/leetcode/editor/cn/[438]找到字符串中所有字母异位词.go" />
+              <option name="titleSlug" value="find-all-anagrams-in-a-string" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../Leetcode/leetcode/editor/cn/[445]两数相加 II.go">
           <value>
             <LeetcodeEditor>
@@ -66,6 +77,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/../Leetcode/leetcode/editor/cn/[445]两数相加 II.go" />
               <option name="titleSlug" value="add-two-numbers-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Leetcode/leetcode/editor/cn/[剑指 Offer II 014]字符串中的变位词.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../Leetcode/leetcode/editor/cn/doc/content/[剑指 Offer II 014]字符串中的变位词.md" />
+              <option name="frontendQuestionId" value="leetcode.cn剑指 Offer II 014" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../Leetcode/leetcode/editor/cn/[剑指 Offer II 014]字符串中的变位词.go" />
+              <option name="titleSlug" value="MPnaiL" />
             </LeetcodeEditor>
           </value>
         </entry>

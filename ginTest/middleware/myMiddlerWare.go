@@ -6,6 +6,7 @@ import (
 	"time"
 )
 
+// **注：**Gin中的中间件必须是一个gin.HandlerFunc类型
 func MyMiddlerWare() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		t := time.Now()
